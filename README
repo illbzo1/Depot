@@ -1,1 +1,6 @@
 Working through Agile Web Development with Rails. I doubt I'll edit this shopping cart application much beyond what the book suggests, but it's a good idea to use Git for source control.
+---
+I changed the CSS slightly, to include a 1px border around the product images. 
+---
+Validation! - Added some tests. Had to make sure I got my yml right.
+---
