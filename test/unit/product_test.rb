@@ -18,7 +18,7 @@ class ProductTest < ActiveSupport::TestCase
                           :image_url    => "fred.gif")
                           
     assert !product.save
-    assert_equal "has already been taken", product.errors[:title].join('; ')
+    assert_equal "must be unique.", product.errors[:title].join('; ')
   end
     
   test "product price must be positive" do
@@ -28,12 +28,12 @@ class ProductTest < ActiveSupport::TestCase
                           
     product.price = -1
     assert product.invalid?
-    assert_equal "must be greater than or equal to 0.01",
+    assert_equal "must be a number.",
       product.errors[:price].join('; ')
       
     product.price = 0
     assert product.invalid?
-    assert_equal "must be greater than or equal to 0.01",
+    assert_equal "must be a number.",
       product.errors[:price].join('; ')
       
     product.price = 1

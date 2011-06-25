@@ -1,0 +1,1 @@
+Time::DATE_FORMATS[:simple_date] = "%m/%d/%Y %I:%M %p"

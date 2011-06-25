@@ -4,3 +4,5 @@ I changed the CSS slightly, to include a 1px border around the product images.
 ---
 Validation! - Added some tests. Had to make sure I got my yml right.
 ---
+Layout update - This update includes both layout changes and more work with functional tests. I've added a display for the current date and time in the sidebar, formatted using an initializer.
+---
