@@ -6,3 +6,5 @@ Validation! - Added some tests. Had to make sure I got my yml right.
 ---
 Layout update - This update includes both layout changes and more work with functional tests. I've added a display for the current date and time in the sidebar, formatted using an initializer.
 ---
+Cart update - I've added basic cart functionality. Extra stuff includes displaying Time.now in the application view as well as a counter that tracks how often a user has visited the site.
+---
