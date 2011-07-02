@@ -4,7 +4,9 @@ class Product < ActiveRecord::Base
   before_destroy :ensure_not_referenced_by_any_line_item
   validates_presence_of :title, :description, :image_url, :message => 'can not be blank.'
   validates_numericality_of :price, :greater_than_or_equal_to => 0.01, :message => 'must be a number.'
+  validates_numericality_of :price, :less_than_or_equal_to => 500, :message => 'is too high.'
   validates_uniqueness_of :title, :message => 'must be unique.'
+  validates_uniqueness_of :image_url, :message => 'must be unique.'
   validates :image_url, :format => {
     :with     => %r{\.(gif|jpg|png)$}i,
     :message  =>  'must be a URL for GIF, JPG or PNG image.'

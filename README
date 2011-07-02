@@ -8,3 +8,5 @@ Layout update - This update includes both layout changes and more work with func
 ---
 Cart update - I've added basic cart functionality. Extra stuff includes displaying Time.now in the application view as well as a counter that tracks how often a user has visited the site.
 ---
+More work on the cart - The cart works better now. Users can add multiple items to the cart and the price automatically updates. I've also added line item deletion from the cart view, as well as a redirect to the cart view upon deleting a line item and a redirect to the store itself upon removing the last item in a cart.
+---
