@@ -10,3 +10,5 @@ Cart update - I've added basic cart functionality. Extra stuff includes displayi
 ---
 More work on the cart - The cart works better now. Users can add multiple items to the cart and the price automatically updates. I've also added line item deletion from the cart view, as well as a redirect to the cart view upon deleting a line item and a redirect to the store itself upon removing the last item in a cart.
 ---
+Adding some ajax - A lot of styling in this update. The cart in the sidebar now updates with Ajax calls. Users can also delete items from the cart and it automatically refreshes. I may update this functionality so users can add or remove items once a line item has been created. We'll see!
+---

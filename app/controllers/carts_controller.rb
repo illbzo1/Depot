@@ -67,7 +67,7 @@ class CartsController < ApplicationController
         format.html { redirect_to(@cart, :notice => 'Cart was successfully updated.') }
         format.xml  { head :ok }
       else
-        format.html { render :action => "edit" }
+        format.html { redirect_to(store_url)}
         format.xml  { render :xml => @cart.errors, :status => :unprocessable_entity }
       end
     end
@@ -81,7 +81,8 @@ class CartsController < ApplicationController
     session[:cart_id] = nil
 
     respond_to do |format|
-      format.html { redirect_to(store_url, :notice => 'Your cart is empty.') }
+      format.html { redirect_to(store_url) }
+      format.js
       format.xml  { head :ok }
     end
   end
