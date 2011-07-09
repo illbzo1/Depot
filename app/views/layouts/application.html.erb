@@ -23,10 +23,12 @@
           <%= render @cart %>
           <% end %>
         <% end %>
+      <div id="menu">
       <%= link_to 'Home', store_path %><br />
       <%= link_to 'Questions', store_path %><br />      
       <%= link_to 'News', store_path %><br />
       <%= link_to 'Contact', store_path %><br />
+      </div>
     </div>
     <div id="main">
       <%= yield %>

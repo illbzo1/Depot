@@ -80,6 +80,7 @@ class LineItemsController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to store_url }
+      format.js
       format.xml  { head :ok }
     end
   end

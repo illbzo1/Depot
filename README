@@ -12,3 +12,5 @@ More work on the cart - The cart works better now. Users can add multiple items 
 ---
 Adding some ajax - A lot of styling in this update. The cart in the sidebar now updates with Ajax calls. Users can also delete items from the cart and it automatically refreshes. I may update this functionality so users can add or remove items once a line item has been created. We'll see!
 ---
+Working on checkout - Users can now check out. I've also hidden the check out button when a user is already in the checkout phase.
+---
