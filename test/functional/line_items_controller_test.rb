@@ -1,3 +1,5 @@
+# Destroy test is commented out. Must be fixed later.
+
 require 'test_helper'
 
 class LineItemsControllerTest < ActionController::TestCase
@@ -20,7 +22,6 @@ class LineItemsControllerTest < ActionController::TestCase
     assert_difference('LineItem.count') do
       post :create, :product_id => products(:ruby).id
     end
-
     assert_redirected_to store_path
   end
 
@@ -44,7 +45,7 @@ class LineItemsControllerTest < ActionController::TestCase
       delete :destroy, :id => @line_item.to_param
     end
 
-    assert_redirected_to store_path
+    assert_redirected_to store_url
   end
   
   test "should create line_item via ajax" do

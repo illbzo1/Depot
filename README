@@ -14,3 +14,5 @@ Adding some ajax - A lot of styling in this update. The cart in the sidebar now 
 ---
 Working on checkout - Users can now check out. I've also hidden the check out button when a user is already in the checkout phase.
 ---
+Adding emailing functionality - Users will now receive emails upon submission and successful shipment of their orders.
+---
