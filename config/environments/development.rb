@@ -6,8 +6,8 @@ Depot::Application.configure do
     :port           =>  587,
     :domain         =>  "http://www.gmail.com",
     :authentication =>  "plain",
-    :user_name      =>  "Dave",
-    :password       =>  "Secret",
+    :user_name      =>  "tyleronrails@gmail.com",
+    :password       =>  "railstime",
     :enable_starttls_auto =>  true
   }
 

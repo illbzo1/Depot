@@ -16,3 +16,5 @@ Working on checkout - Users can now check out. I've also hidden the check out bu
 ---
 Adding emailing functionality - Users will now receive emails upon submission and successful shipment of their orders.
 ---
+User log in - Added the ability for administrators to log in and check order statuses, list of products, etc. I've also added a method that will prompt a user to create an admin if no admins exist.
+---

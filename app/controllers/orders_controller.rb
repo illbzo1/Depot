@@ -1,4 +1,5 @@
 class OrdersController < ApplicationController
+  skip_before_filter :authorize, :only => [:new, :create]
   # GET /orders
   # GET /orders.xml
   def index
@@ -70,6 +71,7 @@ class OrdersController < ApplicationController
 
     respond_to do |format|
       if @order.update_attributes(params[:order])
+        Notifier.order_shipped(@order).deliver unless @order.ship_date.nil?
         format.html { redirect_to(@order, :notice => 'Order was successfully updated.') }
         format.xml  { head :ok }
       else
