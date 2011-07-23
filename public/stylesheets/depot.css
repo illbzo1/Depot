@@ -20,6 +20,13 @@
   border:     1px solid #000;
 }
 
+#locale {
+  float: right;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #282;
+}
+
 #columns {
   background: #141;
 }
