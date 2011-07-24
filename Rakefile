@@ -4,13 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake/dsl_definition'
 require 'rake'
-module ::Depot
-  class Application
-    include Rake::DSL if defined?(Rake::DSL)
-  end
-end
-
-module ::RakeFileUtils
-  extend Rake::FileUtilsExt
-end
 Depot::Application.load_tasks
