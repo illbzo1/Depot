@@ -13,9 +13,6 @@ class Product < ActiveRecord::Base
     :message  =>  'must be a URL for GIF, JPG or PNG image.'
   }
   validates_length_of :title, :minimum => 10, :message => 'must be at least 10 characters.'
-  def self.find_products_for_sale
-    find(:all, :order => "title", :conditions => {:locale => I18n.locale})
-  end
   
   private
     
